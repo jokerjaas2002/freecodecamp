@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](http://127.0.0.1:5500/freecodecamp/index.html)
+[Live Demo Link](https://jokerjaas2002.github.io/freecodecamp/)
 
 ## Getting Started
 
