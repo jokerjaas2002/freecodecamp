@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>Survey Form</title>
-  </head>
-  <body>
-    <h1 id="title">SURVEY FORM</h1>
-    <p id="description">
-Form for paycodecamp
-    </p>
-    <form id="survey-form" class="form">
-      <label id="name-label">username</label>
-      <input id="name" type="text" placeholder="username" required>
-      <label id="email-label">email</label>
-      <input id="email" type="email" placeholder="email" required>
-      <label id="number-label">number</label>
-      <input id="number" type="number" placeholder="number" min="5" max="8" required> 
-      
-      <select id="dropdown" name="dropdown"> 
-      <option>Estudients      
-        </option>     
-<option>Others</option>
-
-      </select>
-      <input type="radio" value=" " name="boton">
-      <input type="radio" value="1" name="boton">
-      <input type="checkbox" value=" ">
-      <input type="checkbox" value="1">
-      <textarea></textarea>
-      <input id="submit" type="submit">
-
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Form survey</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    <br>
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+    <br>
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" min="1" max="100" placeholder="Enter your number" required>
+    <br>
+    <label for="dropdown">Which option best describes your current role?:</label>
+    <select id="dropdown">
+      <option value="option1">Student</option>
+      <option value="option2">Others</option>
+    </select>
+    <br>
+    <p>Would you recommend freeCodeCamp to a friend?:</p>
+    <input type="radio" id="option1" name="radio-group" value="option1">
+    <label for="option1">Definitely</label>
+    <br>
+    <input type="radio" id="option2" name="radio-group" value="option2">
+    <label for="option2">Not sure</label>
+    <br>
+    <p>Select multiple options:</p>
+    <input type="checkbox" id="checkbox1" name="checkbox-group" value="value1">
+    <label for="checkbox1">Videos</label>
+    <br>
+    <input type="checkbox" id="checkbox2" name="checkbox-group" value="value2">
+    <label for="checkbox2">Challenge</label>
+    <br>
+    <p>Additional Comments:</p>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+    <br>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
 </html>
