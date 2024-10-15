@@ -10,34 +10,40 @@
   <h1 id="title">Survey Form</h1>
   <p id="description">Form survey</p>
   <form id="survey-form" class="form">
-    <label id="name-label" for="name">Name:</label>
-    <input id="name" type="text" placeholder="Enter your name" required>
+  
+    <label for="name">Enter Your Name: <input id="name" name="name" type="text" required placeholder="Name"/></label>
     <br>
-    <label id="email-label" for="email">Email:</label>
-    <input id="email" type="email" placeholder="Enter your email" required>
+    <label for="email">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Email"/></label>
     <br>
-    <label id="number-label" for="number">Age:</label>
-    <input id="number" type="number" min="1" max="100" placeholder="Enter your number" required>
+    
+    <label for="number">Enter Your Number: <input id="number" name="number" type="number" required placeholder="Number" /></label>
     
     <label for="dropdown">Which option best describes your current role?:</label>
     <select id="dropdown">
       <option value="option1">Student</option>
       <option value="option2">Others</option>
     </select>
+  
+
     
-    <p class="point">Would you recommend freeCodeCamp to a friend?:</p>
-    <input type="radio" id="option1" name="radio-group" value="option1">
-    <label for="option1">Definitely</label>
-    
-    <input type="radio" id="option2" name="radio-group" value="option2">
-    <label for="option2">Not sure</label>
-    
-    <p class="point">Select multiple options:</p>
-    <input type="checkbox" id="checkbox1" name="checkbox-group" value="value1">
-    <label for="checkbox1">Videos</label>
-    
-    <input type="checkbox" id="checkbox2" name="checkbox-group" value="value2">
-    <label for="checkbox2">Challenge</label>
+
+      <p class="point">Would you recommend freeCodeCamp to a friend?:</p>
+      
+      <input type="radio" id="option1" name="radio-group" value="option1">
+      <label for="option1">Definitely</label>
+      <br>
+      <input type="radio" id="option2" name="radio-group" value="option2">
+      <label for="option2">Not sure</label>
+      <br>
+      <p class="point">Select multiple options:</p>
+<br>
+<input type="checkbox" id="checkbox1" name="checkbox-group" value="value1" class="inline">
+      <label for="checkbox1">Videos</label>
+      <br>
+      <input type="checkbox" id="checkbox2" name="checkbox-group" value="value2" class="inline">
+      <label for="checkbox2">Challenge</label>
+      <br>
+  
     
     <p class="point">Additional Comments:</p>
     <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
